@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button type="button" onclick="myFunction()">Try it</button>
+	<p id="demo">A Paragraph.</p>
+	<script src="audiobars.js"></script>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML="My First JavaScript Function";
+			var waveform = new DisplayWaveform(document);
+		}
+	</script>
+</body>
+</html>
