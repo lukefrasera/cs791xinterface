@@ -46,6 +46,11 @@ AudioHandler.prototype.playCallBack = function() {
     return player;
 };
 
+AudioHandler.prototype.playSound(buffer){
+  	this.sourceNode.buffer = buffer;
+	this.sourceNBode.start(0);
+}
+
 AudioHandler.prototype.loaderCallBack = function() {
 	var self = this;
 	function callback(buffer) {
